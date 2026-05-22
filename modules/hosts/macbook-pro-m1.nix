@@ -24,7 +24,7 @@ in {
 
         networking = {
             computerName = "Nilss Macbook Pro 14";
-            hostName = "runner";
+            hostName = "macbook";
             localHostName = "nilsblix-mbp2021";
         };
     };

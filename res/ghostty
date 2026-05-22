@@ -1,22 +1,17 @@
 font-feature = -calt, -liga, -dlig
-font-family = PlemolJP Console NF
 font-size = 16
-theme = Moonfly
+
+cursor-color = #FF6E86
+# cursor-color = #FFB96E
 split-divider-color = #1199da
-background = #000000
-cursor-color = #FFB96E
+theme = dark:Moonfly,light:Apple System Colors Light
 
 cursor-style = block
-cursor-opacity = 0.75
 cursor-style-blink = false
-
 shell-integration-features = no-cursor
-cursor-click-to-move = true
 mouse-hide-while-typing = true
-
-window-theme = system
-window-padding-balance = false
 macos-titlebar-style = native
+window-theme = system
 
 keybind = cmd+k=goto_split:top
 keybind = cmd+j=goto_split:bottom

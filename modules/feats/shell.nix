@@ -38,7 +38,7 @@
             shellAliases = shellAliases "zsh";
             initContent = lib.concatStrings [
                 ''
-                    eval "$(${glowstick}/bin/main zsh anyhow)"
+                    eval "$(${glowstick}/bin/main zsh default-nix)"
                 ''
                 yaziCdScript
             ];
