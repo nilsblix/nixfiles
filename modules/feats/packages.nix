@@ -18,6 +18,7 @@
             dust
             fd
             firefox
+            fish
             gh
             git
             postman
