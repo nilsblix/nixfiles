@@ -10,6 +10,9 @@
             silent = true;
         };
         programs.fzf.enable = true;
-        programs.yazi.enable = true;
+        programs.yazi = {
+            enable = true;
+            shellWrapperName = "yy";
+        };
     };
 }

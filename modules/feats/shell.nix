@@ -1,11 +1,15 @@
 { ... }:
 {
-    flake.modules.darwin.shell = {
+    flake.modules.darwin.shell = { pkgs, ... }: {
+        environment.shells = [
+            pkgs.fish
+        ];
+        programs.fish.enable = true;
         programs.zsh.enable = true;
     };
 
-    flake.modules.homeManager.shell = { ... }: {
-        programs.zsh = {
+    flake.modules.homeManager.shell = { lib, pkgs, ... }: {
+        programs.zsh = lib.mkIf (!pkgs.stdenv.isDarwin) {
             enable = true;
             initContent = ''
                 fish
@@ -28,6 +32,8 @@
 
                 bind \cc 'echo; commandline ""; commandline -f repaint'
 
+                alias codex "nix run github:numtide/llm-agents.nix#codex"
+                alias da "direnv allow"
                 alias gd "git diff"
                 alias gs "git status"
                 alias nd "nix develop -c fish"

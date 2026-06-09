@@ -81,4 +81,4 @@ Notes
 
 - Darwin config enables declarative Homebrew via `nix-homebrew`; Homebrew is
   set up automatically and casks are managed in `modules/feats/homebrew.nix`.
-- Channels are pinned to the 25.11 releases in `flake.nix`.
+- Channels are pinned to the 26.05 releases in `flake.nix`.

@@ -1,10 +1,11 @@
 font-feature = -calt, -liga, -dlig
-font-size = 16
+font-size = 22
+font-family = PlemolJP Console NF
 
-cursor-color = #FF6E86
-# cursor-color = #FFB96E
+cursor-color = #FFB96E
 split-divider-color = #1199da
-theme = dark:Moonfly,light:Apple System Colors Light
+# theme = dark:Moonfly,light:Apple System Colors Light
+theme = Moonfly
 
 cursor-style = block
 cursor-style-blink = false

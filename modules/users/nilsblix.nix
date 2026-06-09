@@ -16,7 +16,7 @@
         users.users.${config.username} = {
             uid = 501;
             home = "/Users/nilsblix";
-            shell = pkgs.zsh;
+            shell = pkgs.fish;
         };
     };
 
